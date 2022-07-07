@@ -444,9 +444,10 @@ header{
 
     .hobby-img img{
         width: 100%;
-        position: relative;
+        display: block;
         object-fit: cover;
         object-position: center;
+        transform: translateY(-40%);
     }
 
     .hobby-text{
