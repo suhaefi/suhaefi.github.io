@@ -430,6 +430,30 @@ header{
 }
 
 @media(max-width: 736px){
+    .hobby{
+        flex-direction: column;
+        max-height: 100%;
+        gap:unset;
+        overflow: hidden;
+    }
+
+    .hobby-img{
+        display: block;
+        max-height: 120px;
+    }
+
+    .hobby-img img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .hobby-text{
+        display: block;
+        padding: 20px;
+    }
+
     .jumbotron{
         flex-direction: column;
         align-items: center;
