@@ -501,6 +501,10 @@ header{
 }
 
 @media(max-width: 636px){
+    .hobby-img img{
+        transform: translateY(-40%);
+    }
+
     .jumbotron-text h1{
         font-size: 2em;
     }
@@ -604,6 +608,10 @@ header{
 }
 
 @media(max-width:412px){
+    .hobby-img img{
+        transform: translateY(-55%);
+    }
+
     .jumbotron-text h1{
         font-size: 1.5em;
     }
