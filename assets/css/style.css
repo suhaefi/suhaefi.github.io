@@ -431,14 +431,13 @@ header{
 
 @media(max-width: 736px){
     .hobby{
+        display: flex;
         flex-direction: column;
         max-height: 100%;
-        gap:unset;
         overflow: hidden;
     }
 
     .hobby-img{
-        display: block;
         max-height: 120px;
     }
 
@@ -450,7 +449,6 @@ header{
     }
 
     .hobby-text{
-        display: block;
         padding: 20px;
     }
 
