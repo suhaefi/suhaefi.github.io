@@ -332,8 +332,8 @@ nav{
     align-items: center;
     color: #f2f2f2;
     margin-left: auto;
-    padding-right: 30px;
-    padding-bottom: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .social-media .icon-wrapper:hover{
@@ -423,8 +423,8 @@ header{
     }
 
     .social-media .social-media-link{
-        padding-bottom: 15px;
-        padding-right: 20px;
+        margin-bottom: 15px;
+        margin-right: 20px;
     }
 }
 
@@ -432,23 +432,25 @@ header{
     .hobby{
         display: flex;
         flex-direction: column;
-        max-height: 100%;
-        overflow: hidden;
+        max-height: fit-content;
+        margin: 10px;
     }
 
     .hobby-img{
-        max-height: 120px;
+        display: block;
+        max-height: 150px;
+        overflow: hidden;
     }
 
     .hobby-img img{
-        height: 100%;
         width: 100%;
+        position: relative;
         object-fit: cover;
         object-position: center;
     }
 
     .hobby-text{
-        padding: 20px;
+        padding: 0px 20px 20px 20px;
     }
 
     .hobby-text h3, .hobby-text p{
@@ -477,10 +479,6 @@ header{
         width: 50px;
     }
 
-    .list-hobbies{
-        padding-top: 10px;
-    }
-
     .content{
         margin-left: 2%;
         margin-right: 2%;
@@ -496,8 +494,8 @@ header{
     }
 
     .social-media .social-media-link{
-        padding-bottom: 15px;
-        padding-right: 20px;
+        margin-bottom: 15px;
+        margin-right: 20px;
     }
 }
 
@@ -543,30 +541,6 @@ header{
         object-fit: contain;
     } 
 
-    .hobby{
-        flex-direction: column;
-        max-height: 100%;
-        gap:unset;
-        overflow: hidden;
-    }
-
-    .hobby-img{
-        display: block;
-        max-height: 120px;
-    }
-
-    .hobby-img img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .hobby-text{
-        display: block;
-        padding: 20px;
-    }
-
     .social-media .icon-wrapper{
         padding: 8px;
     }
@@ -577,8 +551,8 @@ header{
     }
 
     .social-media .social-media-link{
-        padding-bottom: 15px;
-        padding-right: 20px;
+        margin-bottom: 15px;
+        margin-right: 20px;
     }
 
     nav{
@@ -651,6 +625,10 @@ header{
     }
     .content h2{
         font-size: 16px;
+    }
+
+    .content .about-me-text ul li{
+        font-size: 12px;
     }
 }
 
