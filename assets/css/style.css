@@ -112,6 +112,7 @@ nav {
     display: flex;
     flex-direction: column;
     margin: 70px 15% 0px 15%;
+    overflow-x: hidden;
 }
 
 .about-me {
@@ -168,12 +169,12 @@ nav {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 70px 0px;
+    margin-top: 90px;
 }
 
 .email {
     width: 100%;
-    padding: 20px 0px;
+    padding: 30px 0px 20px 0px;
 }
 
 .email p {
@@ -255,13 +256,14 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 70px;
 }
 
 .list-certificate {
     padding: 40px 10px 10px 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
     gap: 20px;
     width: 100%;
@@ -281,25 +283,24 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 70px 0;
+    margin-top: 120px;
 }
 
 .list-hobbies {
-    padding: 40px 0px;
+    padding: 40px 10px;
     display: flex;
     flex-direction: column;
 }
 
 .hobby {
     display: flex;
-    gap: 25px;
     max-height: 150px;
     margin: 20px 0;
 }
 
 .hobby-text {
     flex-basis: 55%;
-    padding: 10px 0;
+    padding: 20px 30px;
 }
 
 .hobby-img {
@@ -408,6 +409,7 @@ header {
 
 /* Project Section */
 #project {
+    margin-top: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -423,33 +425,68 @@ header {
     justify-content: space-around;
 }
 
-.project-item {
+.project-item{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.project-item a {
     height: 250px;
     overflow: hidden;
-    border: 2px solid #009ffd;
-    border-radius: 5px;
 }
 
-.project-item a img {
+.project-img{
+    display: flex;
+    flex-basis: 45%;
+}
+
+.project-img img{
+    width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.project-name {
+.project-desc{
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    /* gap: 10px; */
+    position: relative;
+}
+
+.project-desc p{
+    margin-bottom: 10px;
     font-size: 14px;
 }
 
-.project-item a:hover img {
-    transform: scale(1.1);
-    transition: 0.5s ease-in-out;
+.project-desc .check-wrapper{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    /* justify-content: flex-end; */
+}
+
+.check-wrapper .check-button{
+    text-decoration: none;
+    color: #f2f2f2;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-top: 5px;
+    background-color: #2a2a72;
+    background-image: linear-gradient(320deg, #2a2a72 0%, #009ffd 74%);
+}
+
+.check-button:hover{
+    box-shadow: 3px 2px 8px #2a2a72;
+}
+
+.check-button .icon{
+    width: 1em;
+    height: 1em;
+    margin-right: 5px;
 }
 
 /* Responsive with media query */
