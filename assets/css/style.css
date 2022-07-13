@@ -303,6 +303,10 @@ nav {
     padding: 20px 30px;
 }
 
+.hobby-text p{
+    font-size: 13.5px;
+}
+
 .hobby-img {
     display: flex;
     flex-basis: 45%;
@@ -454,14 +458,16 @@ header {
 
 .project-desc p{
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 13.5px;
 }
 
 .project-desc .check-wrapper{
     display: flex;
     position: absolute;
     bottom: 0;
+    right: 0;
     margin-bottom: 20px;
+    margin-right: 20px;
     /* justify-content: flex-end; */
 }
 
@@ -512,34 +518,45 @@ header {
 }
 
 @media(max-width: 736px) {
-    .hobby {
+    .hobby, .project-item {
         display: flex;
         flex-direction: column;
         max-height: fit-content;
         margin: 10px;
     }
 
-    .hobby-img {
+    .project-item{
+        height: 100%;
+    }
+
+    .hobby-img{
         display: block;
         max-height: 150px;
         overflow: hidden;
     }
 
-    .hobby-img img {
-        width: 100%;
+    .project-img{
+        max-height: 200px;
+        display: block;
+        overflow: hidden;
+    }
+
+    .project-desc .check-wrapper{
+        position: relative;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+    .hobby-img img, .project-img img {
+        height: 100%;
         display: block;
         object-fit: cover;
         object-position: center;
-        transform: translateY(-40%);
+        transform: translateY(-30%);
     }
 
     .hobby-text {
-        padding: 0px 20px 20px 20px;
-    }
-
-    .hobby-text h3,
-    .hobby-text p {
-        text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.6);
+        padding: 20px;
     }
 
     .jumbotron {
@@ -586,7 +603,7 @@ header {
 
 @media(max-width: 636px) {
     .hobby-img img {
-        transform: translateY(-40%);
+        transform: translateY(-35%);
     }
 
     .jumbotron-text h1 {
@@ -693,8 +710,13 @@ header {
 }
 
 @media(max-width:412px) {
+
+    .project-img img{
+        transform: translateY(0);
+    }
+
     .hobby-img img {
-        transform: translateY(-45%);
+        transform: translateY(-40%);
     }
 
     .jumbotron-text h1 {
@@ -731,9 +753,4 @@ header {
     .certificate-item {
         height: 200px;
     }
-
-    .project-item{
-        height: 200px;
-    }
-
 }
