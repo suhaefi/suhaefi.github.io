@@ -18,7 +18,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 8px 32px;
-    background-color: rgba(42, 42, 114, 0.0);
+    background-color: rgba(42, 42, 114, 0);
     position: fixed;
     width: 100%;
     z-index: 20;
@@ -47,7 +47,7 @@ nav {
     gap: 6px;
 }
 
-.bg-nav-link{
+.bg-nav-link {
     background-color: rgba(42, 42, 114, 0.6);
     border-radius: 5px;
 }
@@ -72,11 +72,12 @@ nav {
     flex-direction: row;
     padding: 100px 80px 80px 80px;
     background-color: #2a2a72;
-    background-image: linear-gradient(320deg, #2a2a72 0%, #009ffd 74%), url('../img/bg/bg-jumbotron.png');
+    background-image: linear-gradient(320deg, #2a2a72 0%, #009ffd 74%),
+        url("../img/bg/bg-jumbotron.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 110%;
-    background-blend-mode:lighten;
+    background-blend-mode: lighten;
     /* margin-top: -60px; */
     width: 100%;
     height: 485px;
@@ -129,6 +130,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .content h2 {
@@ -139,7 +141,7 @@ nav {
 .about-me-text {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0px;
+    padding: 40px;
     gap: 50px;
 }
 
@@ -153,18 +155,9 @@ nav {
 }
 
 .about-me-text p {
-    text-align: justify;
+    text-align: center;
     margin-bottom: 8px;
 }
-
-.about-me-text .pendidikan {
-    flex-basis: 50%;
-}
-
-.about-me-text .minat {
-    flex-basis: 50%;
-}
-
 .content .about-me-text ul {
     margin-left: 20px;
     margin-top: 10px;
@@ -273,7 +266,7 @@ nav {
     padding: 40px 10px 10px 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     width: 100%;
@@ -313,7 +306,7 @@ nav {
     padding: 20px 30px;
 }
 
-.hobby-text p{
+.hobby-text p {
     font-size: 13.5px;
 }
 
@@ -439,25 +432,25 @@ header {
     justify-content: space-around;
 }
 
-.project-item{
+.project-item {
     display: flex;
     height: 250px;
     overflow: hidden;
 }
 
-.project-img{
+.project-img {
     display: flex;
     flex-basis: 45%;
 }
 
-.project-img img{
+.project-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.project-desc{
+.project-desc {
     flex-basis: 55%;
     display: flex;
     flex-direction: column;
@@ -466,12 +459,12 @@ header {
     position: relative;
 }
 
-.project-desc p{
+.project-desc p {
     margin-bottom: 10px;
     font-size: 13.5px;
 }
 
-.project-desc .check-wrapper{
+.project-desc .check-wrapper {
     display: flex;
     position: absolute;
     bottom: 0;
@@ -481,7 +474,7 @@ header {
     /* justify-content: flex-end; */
 }
 
-.check-wrapper .check-button{
+.check-wrapper .check-button {
     text-decoration: none;
     color: #f2f2f2;
     border-radius: 50px;
@@ -495,18 +488,18 @@ header {
     background-image: linear-gradient(320deg, #2a2a72 0%, #009ffd 74%);
 }
 
-.check-button:hover{
+.check-button:hover {
     box-shadow: 3px 2px 8px #2a2a72;
 }
 
-.check-button .icon{
+.check-button .icon {
     width: 1em;
     height: 1em;
     margin-right: 5px;
 }
 
 /* Responsive with media query */
-@media(max-width: 992px) {
+@media (max-width: 992px) {
     .content {
         margin-left: 5%;
         margin-right: 5%;
@@ -527,37 +520,39 @@ header {
     }
 }
 
-@media(max-width: 736px) {
-    .hobby, .project-item {
+@media (max-width: 736px) {
+    .hobby,
+    .project-item {
         display: flex;
         flex-direction: column;
         max-height: fit-content;
         margin: 10px;
     }
 
-    .project-item{
+    .project-item {
         height: 100%;
     }
 
-    .hobby-img{
+    .hobby-img {
         display: block;
         max-height: 150px;
         overflow: hidden;
     }
 
-    .project-img{
+    .project-img {
         max-height: 200px;
         display: block;
         overflow: hidden;
     }
 
-    .project-desc .check-wrapper{
+    .project-desc .check-wrapper {
         position: relative;
         margin-bottom: 0;
         margin-right: 0;
     }
 
-    .hobby-img img, .project-img img {
+    .hobby-img img,
+    .project-img img {
         height: 100%;
         display: block;
         object-fit: cover;
@@ -611,8 +606,9 @@ header {
     }
 }
 
-@media(max-width: 636px) {
-    .hobby-text, .project-desc{
+@media (max-width: 636px) {
+    .hobby-text,
+    .project-desc {
         padding: 20px 10px;
     }
 
@@ -723,9 +719,8 @@ header {
     }
 }
 
-@media(max-width:412px) {
-
-    .project-img img{
+@media (max-width: 412px) {
+    .project-img img {
         transform: translateY(0);
     }
 
